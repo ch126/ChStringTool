@@ -1,4 +1,4 @@
-# StringTool
+# ChStringTool
 JSON String and attribute string tool
 
 ```Objective-C
@@ -11,7 +11,7 @@ JSON String and attribute string tool
                                     @"am":[UIFont systemFontOfSize:50],
                                     @"ch126":[UIColor orangeColor]};
     
-    NSAttributedString * aString = [StringTool getAttributedStringWithFullString:fullString AttribuesDic:attributeDic];
+    NSAttributedString * aString = [ChStringTool getAttributedStringWithFullString:fullString AttribuesDic:attributeDic];
     
     label.attributedText = aString;
     
@@ -24,7 +24,7 @@ JSON String and attribute string tool
                            @"Country":@"Taiwan"};
 
     
-    NSString * jsonString = [StringTool getJSONStringWithJSONObject:obj];
+    NSString * jsonString = [ChStringTool getJSONStringWithJSONObject:obj];
     /*
      log:
      
@@ -35,7 +35,7 @@ JSON String and attribute string tool
      }
    */
     
-    NSDictionary * jsonDic = (NSDictionary *)[StringTool getJSONObjectWithJSONString:jsonString];
+    NSDictionary * jsonDic = (NSDictionary *)[ChStringTool getJSONObjectWithJSONString:jsonString];
     /*
      log:
      
